@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and Interesting Places</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .weather, .places {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Weather and Interesting Places</h1>
+
+<!-- Секция для вывода информации о погоде -->
+<div class="weather">
+    <h2>Weather in {{location_name}}</h2>
+    <p>Temperature: {{temperature}} °C</p>
+    <p>Conditions: {{weather_description}}</p>
+    <p>Coordinates: {{latitude}}, {{longitude}}</p>
+</div>
+
+<!-- Секция для вывода списка интересных мест -->
+<div class="places-list">
+    <h2>Interesting Places</h2>
+    <ul>
+        {{places}}
+    </ul>
+</div>
+
+</body>
+</html>
